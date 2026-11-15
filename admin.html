@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yotoqxona.uz | Admin panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="admin-header">
+        <h1>Yotoqxona.uz</h1>
+        <p>Administrator boshqaruv paneli</p>
+    </header>
+
+    <main class="admin-container">
+
+        <h2>Arizalarni boshqarish</h2>
+        <p>Talabalar tomonidan yuborilgan arizalar ro‘yxati</p>
+
+        <div class="admin-stats">
+            <div class="admin-stat">
+                <h3 id="jamiArizalar">0</h3>
+                <p>Jami arizalar</p>
+            </div>
+
+            <div class="admin-stat">
+                <h3 id="kutilayotganArizalar">0</h3>
+                <p>Kutilmoqda</p>
+            </div>
+
+            <div class="admin-stat">
+                <h3 id="tasdiqlanganArizalar">0</h3>
+                <p>Tasdiqlangan</p>
+            </div>
+
+            <div class="admin-stat">
+                <h3 id="radEtilganArizalar">0</h3>
+                <p>Rad etilgan</p>
+            </div>
+        </div>
+
+        <div class="admin-table-box">
+            <h3>Kelib tushgan arizalar</h3>
+
+            <div class="table-scroll">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Talaba</th>
+                            <th>Telefon</th>
+                            <th>Yo‘nalish</th>
+                            <th>Yotoqxona</th>
+                            <th>Holati</th>
+                            <th>Amallar</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="arizalarJadvali">
+                        <tr>
+                            <td colspan="7">Arizalar yuklanmoqda...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-home">
+            Bosh sahifaga qaytish
+        </a>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

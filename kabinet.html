@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talaba kabineti | TalabaHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="kabinet-header">
+        <div class="kabinet-logo">TalabaHub</div>
+
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="ariza.html">Ariza topshirish</a>
+            <button id="logoutButton">Chiqish</button>
+        </nav>
+    </header>
+
+    <main class="kabinet-container">
+
+        <section class="kabinet-welcome">
+            <div>
+                <p class="kabinet-small">SHAXSIY KABINET</p>
+                <h1>Xush kelibsiz!</h1>
+                <p>Bu yerda shaxsiy ma'lumotlaringiz va arizalaringizni kuzatishingiz mumkin.</p>
+            </div>
+        </section>
+
+        <section class="kabinet-profile">
+            <h2>Shaxsiy ma'lumotlar</h2>
+
+            <div class="profile-grid">
+
+                <div class="profile-item">
+                    <span>Ism-familiya</span>
+                    <h3 id="talabaIsm">Yuklanmoqda...</h3>
+                </div>
+
+                <div class="profile-item">
+                    <span>Elektron pochta</span>
+                    <h3 id="talabaEmail">Yuklanmoqda...</h3>
+                </div>
+
+                <div class="profile-item">
+                    <span>Telefon raqam</span>
+                    <h3 id="talabaTelefon">Yuklanmoqda...</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="kabinet-applications">
+
+            <div class="applications-heading">
+                <div>
+                    <h2>Mening arizalarim</h2>
+                    <p>Yotoqxonaga yuborgan arizalaringiz holati</p>
+                </div>
+
+                <a href="ariza.html" class="new-application">
+                    + Ariza topshirish
+                </a>
+            </div>
+
+            <div id="meningArizalarim" class="my-applications">
+                Arizalar yuklanmoqda...
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="kabinet-footer">
+        <p>© 2026 Yotoqxona.uz  Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
