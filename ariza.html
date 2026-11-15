@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yotoqxona.uz | Ariza topshirish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="application-container">
+        <div class="application-box">
+
+            <h1>Yotoqxona.uz</h1>
+            <h2>Yotoqxonaga ariza topshirish</h2>
+
+            <p>Quyidagi ma'lumotlarni to'ldiring.</p>
+
+            <form id="arizaForm">
+
+                <label for="arizaName">F.I.Sh.</label>
+                <input type="text" id="arizaName"
+                       placeholder="Ism va familiyangiz"
+                       required>
+
+                <label for="arizaPhone">Telefon raqam</label>
+                <input type="tel" id="arizaPhone"
+                       placeholder="+998901234567"
+                       pattern="\+998[0-9]{9}"
+                       required>
+
+                <label for="arizaFaculty">Fakultet yoki yo'nalish</label>
+                <input type="text" id="arizaFaculty"
+                       placeholder="Yo'nalishingizni kiriting"
+                       required>
+
+                <label for="arizaCourse">Kurs</label>
+                <select id="arizaCourse" required>
+                    <option value="">Kursni tanlang</option>
+                    <option value="1-kurs">1-kurs</option>
+                    <option value="2-kurs">2-kurs</option>
+                    <option value="3-kurs">3-kurs</option>
+                    <option value="4-kurs">4-kurs</option>
+                </select>
+
+                <label for="arizaDormitory">Yotoqxonani tanlang</label>
+                <select id="arizaDormitory" required>
+                    <option value="">Yotoqxonani tanlang</option>
+                    <option value="1">1-sonli talabalar turar joyi</option>
+                    <option value="2">2-sonli talabalar turar joyi</option>
+                    <option value="3">3-sonli talabalar turar joyi</option>
+                </select>
+
+                <label for="arizaIzoh">Qo'shimcha ma'lumot</label>
+                <textarea id="arizaIzoh"
+                          placeholder="Qo'shimcha ma'lumot (ixtiyoriy)"></textarea>
+
+                <button type="submit">Arizani yuborish</button>
+
+            </form>
+
+            <a href="index.html" class="back-home">
+                Bosh sahifaga qaytish
+            </a>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

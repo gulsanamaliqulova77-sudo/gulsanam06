@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro‘yxatdan o‘tish</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Ro'yxatdan o'tish sahifasi -->
+    <div class="auth-container">
+        <div class="auth-box">
+            <!-- Sayt logotipi -->
+            <h1>Yotoqxona<span>.uz</span></h1>
+
+            <h2>Ro'yxatdan o'tish</h2>
+
+            <p class="auth-description">
+                Platformamizga xush kelibsiz!
+                Ma'lumotlaringizni kiriting.
+            </p>
+
+            <!-- Ro'yxatdan o'tish formasi -->
+            <form id="registerForm">
+
+                <label>To'liq ism va familiya</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Ism va familiyangiz"
+                    required
+                >
+
+                <label>Telefon raqami</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+998901234567"
+                    pattern="\+998[0-9]{9}"
+                    required
+                >
+
+                <label>Elektron pochta</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    required
+                >
+
+                <label>Parol</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Parol yarating"
+                    minlength="6"
+                    required
+                >
+
+                <label>Parolni tasdiqlang</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Parolni qayta kiriting"
+                    required
+                >
+
+                <button type="submit" class="auth-button">
+                    Ro'yxatdan o'tish
+                </button>
+
+            </form>
+
+            <p class="auth-footer">
+                Akkauntingiz bormi?
+                <a href="login.html">Tizimga kirish</a>
+            </p>
+
+            <a href="index.html" class="back-home">
+                ← Bosh sahifaga qaytish
+            </a>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
